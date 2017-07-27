@@ -1,4 +1,5 @@
 import Application from './application/application.js';
+import Router from './routing/router.js';
 
 // ==========================================================================
 // Project: Alto - JavaScript Application Framework
@@ -11,6 +12,7 @@ class Alto {
 
     constructor() {
         this.Application = Application;
+        this.Router = Router;
     }
 
 };
