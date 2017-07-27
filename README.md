@@ -1,7 +1,7 @@
 # Alto-React
 Alto application architecture for react.js
 
-Alto derives from a rich history of industry leading frameworks and design patterns.  Leveraging modern languages, tools, and api's, Alto aims to bring a coherent application architecture accross multiple development communities.  Specifically, Alto-React's goal is to bring a clean, organized, full solution to writing React.js applications. 
+Alto derives from a rich history of industry leading frameworks and design patterns.  Leveraging modern languages, tools, and api's, Alto aims to bring a coherent application architecture across multiple development communities.  Specifically, Alto-React's goal is to bring a clean, organized, full solution to writing React.js applications. 
 
 Every feature, every decision revolved around ensuring that Alto provides a clean and structured environment for your applications code.  Its prime focus is architectural design.
 
