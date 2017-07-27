@@ -1,11 +1,17 @@
+import Application from './application/application.js';
+
 // ==========================================================================
 // Project: Alto - JavaScript Application Framework
 // Copyright: @2017 The Code Boutique, LLC
-// License:   Intellectual property of The Code Boutique. LLC
+// License:   MIT License (see license for details)
 // Author: Chad Eubanks
 // ==========================================================================
 
 class Alto {
+
+    constructor() {
+        this.Application = Application;
+    }
 
 };
 
