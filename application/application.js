@@ -12,19 +12,43 @@ let Application = class Application {
     }
 
     static create(mixin) {
-        const application = Object.assign(new Application(), mixin);
-        application.applicationWillLoad();
+        const application = Object.assign(new Application(), this, mixin);
+        application.init();
         return application;
     }
 
-    applicationWillLoad () {
-        console.log('applicationWillLoad');
+    static extend(mixin) {
+        const instance = new Application();
+        instance.create = this.create;
+        return Object.assign(instance, mixin);
     }
 
-    applicationDidLoad() {
+    init() {}
+
+};
+
+Application = Application.extend({
+
+    version: null,
+
+    milestone: null,
+
+    router: null,
+
+    statechart: null,
+
+    init: function () {
+        this.applicationWillLoad();
+    },
+
+    applicationWillLoad: function () {
+        console.log('applicationWillLoad');
+    },
+
+    applicationDidLoad: function ()  {
         console.log('applicationDidLoad');
     }
 
-};
+});
 
 export default Application;
