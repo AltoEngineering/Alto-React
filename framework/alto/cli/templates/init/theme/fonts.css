@@ -1,0 +1,43 @@
+.font-weight-ultra-light {
+    font-family: AvenirNext-UltraLight;
+}
+
+.font-weight-regular {
+    font-family: AvenirNext-Regular;
+}
+
+.font-weight-medium {
+    font-family: AvenirNext-Medium;
+}
+
+.font-weight-demi-bold {
+    font-family: AvenirNext-DemiBold;
+}
+
+.font-weight-bold {
+    font-family: AvenirNext-Bold;
+}
+
+.font-weight-heavy {
+    font-family: AvenirNext-Heavy;
+}
+
+.font-size-xsmall {
+    font-size: 12px;
+}
+
+.font-size-small {
+    font-size: 14px;
+}
+
+.font-size-medium {
+    font-size: 16px;
+}
+
+.font-size-large {
+    font-size: 18px;
+}
+
+.font-size-xlarge {
+    font-size: 21px;
+}

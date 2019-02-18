@@ -1,0 +1,42 @@
+{
+  "name": "alto.js",
+  "version": "0.0.5",
+  "description": "Application Architecture For React.js",
+  "main": "core.js",
+  "scripts": {
+    "build": "rimraf build/ && babel ./ --out-dir build/ --ignore ./framework/alto/cli/templates,./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+  },
+  "bin": {
+    "alto-http": "build/core.js"
+  },
+  "keywords": [
+    "alto",
+    "alto.js",
+    "alto-http",
+    "alto-react",
+    "ui controls",
+    "framework",
+    "mvc",
+    "the code boutique",
+    "javascript"
+  ],
+  "author": "Chad Eubanks",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "6.24.1",
+    "cli-color": "1.3.0",
+    "rimraf": "2.6.2",
+    "wrench": "1.5.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AltoEngineering/altojs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AltoEngineering/altojs/issues"
+  },
+  "homepage": "https://github.com/AltoEngineering/altojs#readme"
+}

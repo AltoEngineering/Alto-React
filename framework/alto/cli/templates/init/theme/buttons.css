@@ -1,0 +1,11 @@
+.text-button {
+    composes: font-size-large font-weight-medium from "./fonts.css";
+    background-color: transparent;
+    border: none;
+    border-radius: 0em;
+    cursor: pointer;
+    outline: none;
+    padding: 0em;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: none;
+}

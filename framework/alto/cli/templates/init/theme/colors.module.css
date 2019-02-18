@@ -1,0 +1,23 @@
+.darkBlueFont {
+    color: #292C33;
+}
+
+.hintColor {
+    color: rgba(41, 44 , 51 , .25);
+}
+
+.darkBlueFont60 {
+    color: rgba(41, 44 , 51 , .60);
+}
+
+.white {
+    color: white;
+}
+
+.backgroundTransparent {
+    background: transparent;
+}
+
+.backgroundDarkBlue {
+    background: #292C33;
+}
