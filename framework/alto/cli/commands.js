@@ -11,7 +11,7 @@ let clc = require('cli-color');
 
 let commands = CoreObject.create({
 
-    version: '0.0.6',
+    version: '0.0.9',
 
     options: [{
         command: "init <application_name>",
