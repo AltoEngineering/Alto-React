@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 
-function useController(controller) {
+function controllerBinding(controller) {
     const [ state, set ] = useState(controller.data);
 
     useEffect(() => () => {
@@ -14,4 +14,4 @@ function useController(controller) {
     return [ state, controller.setState ];
 };
 
-export default useController;
+export default controllerBinding;

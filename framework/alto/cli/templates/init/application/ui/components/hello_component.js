@@ -1,13 +1,14 @@
 import React from "react";
 import LabelView from "../../../framework/alto/ui/label_view";
-import messageController from "../../controllers/message_controller";
-import useController from "../../../framework/alto/data/useController";
+import MessageController from "../../controllers/message_controller";
+import controllerBinding from "../../../framework/alto/data/controller_binding";
 
 let Hello = () => {
-    let [messageData] = useController(messageController);
+    let [messageController] = controllerBinding(MessageController);
+    let {greating} = messageController.data;
 
     return (
-        <LabelView title={messageData.collection.greating} />
+        <LabelView title={greating} />
     )
 
 };

@@ -1,11 +1,11 @@
-import Controller from "../../framework/alto/data/controller";
+import ObjectController from "../../framework/alto/data/object_controller";
 
-let messageController = Controller({
+let MessageController = ObjectController({
 
-    collection: {
+    data: {
         greating: "Hello Alto"
     }
 
 });
 
-export default messageController;
+export default MessageController;
