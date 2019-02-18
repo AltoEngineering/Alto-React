@@ -11,10 +11,20 @@ let clc = require('cli-color');
 
 let commands = CoreObject.create({
 
+    version: '0.0.6',
+
     options: [{
         command: "init <application_name>",
         description: "Creates file structure for Alto-React Application",
         example: "alto init todos"
+    }, {
+        command: "help",
+        description: "Display commands",
+        example: "alto help"
+    }, {
+        command: "-v",
+        description: "Display alto version",
+        example: "alto -v"
     }],
 
     displayOptions: () => {
@@ -45,9 +55,9 @@ let commands = CoreObject.create({
                 init.action(args.slice(1, args.length));
                 return ' ';
             case 'help':
-                return 'help'
+                return commands.displayOptions();
             case '-v':
-                return 'version'
+                return commands.get('version');
             default:
                 commands.displayOptions();
                 return ' '
